@@ -6,29 +6,30 @@ let result=document.querySelector('h3')
 var trash = document.getElementsByClassName("fa-trash");
 
 
-btn.addEventListener('click',()=>{
-  let input=document.querySelector('input').value.toLowerCase()
+// btn.addEventListener('click',()=>{
+  // let input=document.querySelector('input').value.toLowerCase()
+//   //
+//   // fetch(`/api?word=${input}`)
+//   // const name = this.parentNode.parentNode.childNodes[1].innerText
+//   //     const msg = this.parentNode.parentNode.childNodes[3].innerText
+//   //     const thumbUp = parseFloat(this.parentNode.parentNode.childNodes[5].innerText)
+      // fetch('Palindrome', {
+      //   method: 'put',
+      //   headers: {'Content-Type': 'application/json'},
+      //   body: JSON.stringify({
+      //     pal: input,
+      //
+      //   })
+      // })
+      // .then(response => {
+      //   if (response.ok) return response.json()
+      // })
+      // .then(data => {
+      //   console.log(data)
+      //   window.location.reload(true)
+      // })
 
-  fetch(`/api?word=${input}`)
-  // const name = this.parentNode.parentNode.childNodes[1].innerText
-  //     const msg = this.parentNode.parentNode.childNodes[3].innerText
-  //     const thumbUp = parseFloat(this.parentNode.parentNode.childNodes[5].innerText)
-      fetch('Palindrome', {
-        method: 'put',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({
-          pal: input,
 
-        })
-      })
-      .then(response => {
-        if (response.ok) return response.json()
-      })
-      .then(data => {
-        console.log(data)
-        window.location.reload(true)
-      })
-    });
 
 
 
@@ -36,7 +37,7 @@ btn.addEventListener('click',()=>{
           element.addEventListener('click', function(){
             const pal= this.parentNode.parentNode.childNodes[1].innerText
             const resp= this.parentNode.parentNode.childNodes[3].innerText
-            fetch('Palindrome', {
+            fetch('path', {
               method: 'delete',
               headers: {
                 'Content-Type': 'application/json'
