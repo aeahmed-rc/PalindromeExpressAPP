@@ -1,0 +1,36 @@
+*{
+  box-sizing: border-box;
+}
+button{
+  color: black;
+  background-color: red;
+  font-size: 20px;
+display: block;
+margin:auto;
+width:20%;
+}
+input{
+  margin: auto;
+  padding: 5px;
+  display: block;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+body{
+  background-color: white;
+  font-family: sans-serif;
+}
+h3{
+  font-family: sans-serif;
+  color:white;
+  font-size: 30px;
+  text-align: center;
+}
+span{
+  text-align: center;
+  color:black;
+}
+span{
+  text-align: center;
+  color:black;
+}
