@@ -43,7 +43,7 @@ app.get('/', (req, res) => {
 })
 
 app.post('/path', (req, res) => {
-console.log(req)
+console.log(req.body.pal)
   let word = req.body.pal
 
   let wordReversed = word.split('').reverse().join('')
