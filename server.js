@@ -47,10 +47,10 @@ console.log(req.body.pal)
   let word = req.body.pal
 
   let wordReversed = word.split('').reverse().join('')
-  let ifPalindrome = false
+  let ifPalindrome = "This is not a palindrome"
 
   if (word === wordReversed) {
-    ifPalindrome = true
+  ifPalindrome="This is a Palindrome"
   }
   console.log(ifPalindrome)
   db.collection('Palindrome').save({
